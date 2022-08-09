@@ -1,0 +1,15 @@
+{
+  "name": "lauras-closet",
+  "version": "1.0.0",
+  "description": "E-comerce ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/sass/index.scss ./public/style.css"
+  },
+  "author": "@davidalejo32 <davidalejo32@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
+}
