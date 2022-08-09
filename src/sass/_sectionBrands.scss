@@ -1,0 +1,9 @@
+.brands {
+  width: 90%;
+
+  &__img-container {
+    @include flex(row, wrap, center, center);
+    gap: 5rem;
+    margin-top: 9rem;
+  }
+}

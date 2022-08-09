@@ -1,0 +1,175 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.footer {
+  width: 100%;
+  padding: 4rem 0;
+  margin-bottom: 1rem;
+  background-color: #f9fafb;
+
+  &__section-up {
+    width: 90%;
+    margin: 0 auto;
+    @include flex(row, wrap, space-between, flex-start);
+  }
+
+  &__links {
+    @include flex(row, wrap, flex-start, flex-start);
+    background-color: #f9fafb;
+    gap: 7rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: map-get($colors, grey-800);
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin-top: 0.5rem;
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    color: map-get($colors, grey-500);
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: map-get($colors, grey-700);
+    }
+  }
+
+  &__sing {
+    width: 40%;
+
+    @include media(lg) {
+      margin-top: 4rem;
+      width: 80%;
+    }
+
+    @include media(md) {
+      width: 100%;
+    }
+  }
+
+  &__sing-container {
+    width: 100%;
+    @include flex(row, wrap, space-between, flex-start);
+  }
+
+  &__socials-container {
+    min-width: 28rem;
+  }
+
+  &__socials-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__socials-icons {
+    @include flex(row, nowrap, flex-start, flex-start);
+    gap: 2rem;
+  }
+
+  &__socials-icon {
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__platforms {
+    @media screen and (max-width: 473px) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__platforms-container {
+    @include flex(row, nowrap, flex-start, flex-start);
+    gap: 2rem;
+  }
+
+  &__platforms-icon {
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__form-container {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  &__form-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__form {
+    margin-top: 0.5rem;
+    width: 100%;
+    @include flex(row, nowrap, space-between, flex-start);
+
+    @include media(sm) {
+      @include flex(column, nowrap, center, center);
+    }
+  }
+
+  &__form-input {
+    width: 70%;
+    height: 3.5rem;
+    outline: none;
+    border: 1px solid map-get($colors, grey-400);
+    padding: 0 1rem;
+
+    @include media(sm) {
+      width: 100%;
+    }
+  }
+
+  &__form-btn {
+    width: 28%;
+    height: 3.5rem;
+    cursor: pointer;
+    background-color: map-get($colors, grey-800);
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    @include media(sm) {
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__form-coockie {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: map-get($colors, grey-500);
+  }
+
+  &__form-cookie-link {
+    color: #0f4fce;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

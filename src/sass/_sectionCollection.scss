@@ -1,0 +1,111 @@
+.collections {
+  width: 90%;
+  position: relative;
+
+  &__banner {
+    width: 100%;
+    height: 50rem;
+    background-image: url("../src/img/baner-collection.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem;
+    @include flex(column, nowrap, center, flex-start);
+
+    @include media(sm) {
+      padding: 1.5rem;
+      background-position-x: 0%;
+    }
+  }
+
+  &__banner-title {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #0d3f64;
+  }
+
+  &__banner-title--red {
+    color: map-get($colors, color-red);
+  }
+
+  &__banner-btn-icon {
+    fill: map-get($colors, color-red);
+  }
+
+  &__banner-btn {
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 4rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: map-get($colors, color-red);
+    cursor: pointer;
+    @include flex(row, nowrap, center, center);
+    gap: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease-in;
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+      transition: all 0.2s ease-in;
+      transform: translateY(-0.5rem);
+    }
+
+    &:hover .collections__banner-btn-icon {
+      transition: all 0.3s ease-in;
+      fill: white;
+    }
+  }
+
+  &__counter {
+    max-width: 40rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: 4rem;
+    justify-items: center;
+    align-items: center;
+
+    @include media(md) {
+      width: 90%;
+      padding: 0 0;
+      left: 50%;
+      transform: translateX(-50%);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    // @include media(sm) {
+    //   padding: 0 0;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    // }
+  }
+
+  &__clock {
+    color: white;
+  }
+
+  &__clock--num {
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding: 0 1.5rem;
+
+    @include media(sm) {
+      padding: 0 0;
+    }
+  }
+
+  &__clock--db {
+    font-size: 2.5rem;
+    opacity: 0.8;
+  }
+
+  &__clock--txt {
+    font-size: 1.2rem;
+  }
+}

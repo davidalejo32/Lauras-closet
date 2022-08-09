@@ -1,0 +1,176 @@
+.weeks {
+  width: 90%;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($colors, grey-700);
+    font-size: 2rem;
+    position: relative;
+  }
+
+  &__title::after {
+    content: "";
+    width: 9rem;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background-color: map-get($colors, grey-500);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.2rem;
+  }
+
+  &__banner {
+    @include flex(row, nowrap, flex-start, flex-start);
+    gap: 2rem;
+
+    @include media(lg) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__banner--one {
+    margin-top: 8rem;
+  }
+
+  &__banner--two {
+    margin-top: 2rem;
+  }
+
+  &__left {
+    width: 40%;
+    height: 50rem;
+    background-image: url("../src/img/shoes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include flex(row, wrap, center, center);
+    padding: 5rem;
+    position: relative;
+
+    @include media(lg) {
+      width: 60%;
+    }
+
+    @include media(md) {
+      width: 85%;
+      padding: 4rem;
+    }
+
+    @include media(sm) {
+      width: 95%;
+      padding: 1rem;
+    }
+  }
+
+  &__left--two {
+    width: 60%;
+    background-image: url("../src/img/bags.png");
+
+    @include media(lg) {
+      width: 60%;
+    }
+
+    @include media(md) {
+      width: 85%;
+    }
+
+    @include media(sm) {
+      width: 95%;
+      padding: 1rem;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-size: 5rem;
+    text-transform: capitalize;
+
+    @include media(sm) {
+      font-size: 3rem;
+    }
+  }
+
+  &__card-container {
+    width: 26rem;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0, 0.3);
+    border: 1px solid rgba(249, 250, 251, 0.05);
+    backdrop-filter: blur(40px);
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+
+    @include media(sm) {
+      width: 22rem;
+    }
+  }
+
+  &__card-title {
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+  }
+
+  &__card-discount {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+  }
+
+  &__card-discount-code {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+  }
+
+  &__rigth {
+    width: 60%;
+    height: 50rem;
+    background-image: url("../src/img/clock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include flex(row, wrap, center, center);
+    padding: 6rem;
+    position: relative;
+    @include media(lg) {
+      width: 60%;
+    }
+    @include media(md) {
+      width: 85%;
+      padding: 4rem;
+    }
+
+    @include media(sm) {
+      width: 95%;
+      padding: 1rem;
+    }
+  }
+
+  &__rigth--two {
+    width: 40%;
+    background-image: url("../src/img/ accessories.png");
+    @include media(lg) {
+      width: 60%;
+    }
+
+    @include media(md) {
+      width: 85%;
+    }
+
+    @include media(sm) {
+      width: 95%;
+      padding: 1rem;
+    }
+  }
+}

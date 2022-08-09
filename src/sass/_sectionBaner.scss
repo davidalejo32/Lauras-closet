@@ -1,0 +1,122 @@
+.banner {
+  width: 100%;
+  min-height: 50rem;
+  @include flex(row, wrap, flex-start, center);
+  position: relative;
+  @include media(md-sm) {
+    flex-direction: column;
+  }
+
+  &__img-container {
+    width: 40%;
+    min-height: 50rem;
+    @include flex(row, nowrap, center, center);
+    background-color: map-get($colors, primary);
+    position: relative;
+
+    @include media(md-sm) {
+      display: none;
+    }
+  }
+
+  &-circule {
+    width: 30rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &__img {
+    position: absolute;
+    width: 25rem;
+    bottom: -2rem;
+    z-index: 2;
+  }
+
+  &-info__container {
+    width: 60%;
+    height: 50rem;
+    background: repeating-linear-gradient(
+      -45deg,
+      map-get($colors, grey-1000),
+      map-get($colors, grey-1000) 24px,
+      map-get($colors, grey-900) 24px,
+      map-get($colors, grey-900) 60px
+    );
+
+    @include flex(row, nowrap, center, center);
+
+    @include media(md-sm) {
+      min-width: 80%;
+    }
+
+    @include media(sm) {
+      min-width: 100%;
+      height: 40rem;
+    }
+  }
+
+  &-info {
+    min-width: 70%;
+    height: 55%;
+    background-color: map-get($colors, grey-900);
+    padding: 4rem;
+
+    @include media(sm) {
+      padding: 2rem;
+    }
+  }
+
+  &-info__title {
+    color: white;
+    font-size: 4rem;
+    @include media(sm) {
+      font-size: 3rem;
+    }
+  }
+
+  &-info__subtitle {
+    color: map-get($colors, primary);
+    font-size: 4rem;
+    margin-top: 1rem;
+
+    @include media(sm) {
+      font-size: 3rem;
+    }
+  }
+
+  &-info__desc {
+    margin-top: 1rem;
+    color: map-get($colors, grey-100);
+    @include media(sm) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-info__btn {
+    background-color: transparent;
+    border: 1px solid map-get($colors, grey-100);
+    margin-top: 4rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: map-get($colors, grey-100);
+    cursor: pointer;
+    @include flex(row, nowrap, center, center);
+    gap: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease-in;
+
+    &:hover {
+      background-color: map-get($colors, grey-100);
+      color: map-get($colors, grey-900);
+      transition: all 0.2s ease-in;
+      transform: translateY(-0.5rem);
+    }
+
+    &:hover .banner-info__btn-icon {
+      transition: all 0.3s ease-in;
+      fill: map-get($colors, grey-900);
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.popular {
+  width: 90%;
+
+  &__card-container {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    width: 100%;
+    @include flex(row, wrap, center, center);
+    gap: 2rem;
+  }
+
+  &__card {
+    width: 28rem;
+    margin-top: 4rem;
+    @include flex(column, nowrap, flex-start, flex-start);
+    position: relative;
+  }
+
+  &__card-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__card-desc {
+    margin-top: 2rem;
+    text-transform: capitalize;
+    color: map-get($colors, grey-700);
+    line-height: 1.5;
+  }
+
+  &__card-price {
+    margin-top: 2rem;
+    width: 100%;
+    @include flex(row, nowrap, flex-start, flex-start);
+  }
+
+  &__card-price--now {
+    font-weight: 600;
+    color: map-get($colors, grey-700);
+  }
+
+  &__card-price--after {
+    font-weight: 400;
+    color: map-get($colors, grey-400);
+    margin-left: 1.5rem;
+  }
+
+  &__card-add {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: map-get($colors, grey-700);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
