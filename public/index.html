@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laura's Closet</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="./index.html">
+          <h3 class="header__logo">Laura’s Closet</h3>
+        </a>
+
+        <div class="header__search-container" id="search">
+          <i class="bx bx-search header__search-icon"></i>
+          <input
+            class="header__search-input"
+            type="text"
+            placeholder="Search for an item..."
+          />
+        </div>
+
+        <ul class="header__links" id="nav">
+          <li class="header__items">
+            <a class="header__link" href="">store</a>
+          </li>
+          <li class="header__items">
+            <a class="header__link" href="">account</a>
+          </li>
+          <li class="header__items">
+            <a class="header__link" href="">wish list</a>
+          </li>
+          <li class="header__items">
+            <a class="header__link header__link--700" href=""
+              >basket
+              <span>
+                <svg
+                  width="24"
+                  height="22"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="header__icon-basket"
+                    d="M23.2969 7.48437H20.8223L15.4084 0.717023C15.1659 0.413883 14.7234 0.364617 14.4202 0.607242C14.1169 0.84982 14.0677 1.29227 14.3104 1.59551L19.0215 7.48437H4.97855L9.68967 1.59551C9.93225 1.29227 9.88308 0.849773 9.57989 0.607242C9.27661 0.364617 8.83416 0.413836 8.59163 0.717023L3.1777 7.48437H0.703125C0.314812 7.48437 0 7.79918 0 8.18749V11C0 11.3883 0.314812 11.7031 0.703125 11.7031H1.57903L4.24584 21.0369C4.33205 21.3388 4.60795 21.5469 4.92188 21.5469H19.0781C19.392 21.5469 19.668 21.3388 19.7542 21.0369L22.421 11.7031H23.2969C23.6852 11.7031 24 11.3883 24 11V8.18749C24 7.79918 23.6852 7.48437 23.2969 7.48437ZM18.5478 20.1406H5.45222L3.04153 11.7031H20.9585L18.5478 20.1406ZM22.5938 10.2969C20.1851 10.2969 3.68813 10.2969 1.40625 10.2969V8.89062H22.5938V10.2969Z"
+                    fill="black"
+                  />
+                </svg> </span
+            ></a>
+          </li>
+        </ul>
+
+        <div class="header__icons">
+          <i class="bx bx-search header__search-icon--black"></i>
+          <div class="header__menu-icons">
+            <i class="bx bx-menu header__menu-icon"></i>
+            <i class="bx bx-x header__menu-icon--close"></i>
+          </div>
+        </div>
+      </nav>
+      <section class="header__footer">
+        <a class="header__footer-link" href="">new arrivals</a>
+        <a class="header__footer-link header__footer-link--red" href=""
+          >#fresh</a
+        >
+        <a class="header__footer-link" href="">dresses</a>
+        <a class="header__footer-link" href="">tops</a>
+        <a class="header__footer-link" href="">jackes</a>
+        <a class="header__footer-link" href="">lingerie & louge wear</a>
+        <a class="header__footer-link" href="">beach wear</a>
+        <a class="header__footer-link" href="">blouse</a>
+        <a class="header__footer-link" href="">denim</a>
+        <a class="header__footer-link" href="">vintage</a>
+        <a class="header__footer-link" href="">shoes</a>
+        <a class="header__footer-link" href="">sandals</a>
+        <a class="header__footer-link" href="">basgs</a>
+        <a class="header__footer-link" href="">jewelries</a>
+      </section>
+    </header>
+
+    <section class="banner section">
+      <div class="banner-info__container">
+        <div class="banner-info">
+          <h2 class="banner-info__title">Get up to 30% off</h2>
+          <h2 class="banner-info__subtitle">New Arrivals</h2>
+          <p class="banner-info__desc">
+            Introducing our latest collection of products
+          </p>
+          <button class="banner-info__btn">
+            place your order
+            <svg
+              width="20"
+              height="8"
+              viewBox="0 0 25 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="banner-info__btn-icon"
+                d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="banner__img-container">
+        <div class="banner-circule"></div>
+        <img
+          class="banner__img"
+          src="../src/img/image-removebg.png"
+          alt="chica mostrando un abrigo de color cafe con un enterizo de jean color blanco y tacones blancos"
+        />
+      </div>
+    </section>
+
+    <section class="weeks section">
+      <h3 class="weeks__title">this weeks highlights</h3>
+
+      <article class="weeks__banner weeks__banner--one">
+        <div class="weeks__left">
+          <h2 class="weeks__subtitle">exclusive shoes</h2>
+          <div class="weeks__card-container">
+            <p class="weeks__card-title">exclusive shoes</p>
+            <p class="weeks__card-discount">price 20% off</p>
+            <p class="weeks__card-discount-code">discount code - vatr3920</p>
+          </div>
+        </div>
+
+        <div class="weeks__rigth">
+          <h2 class="weeks__subtitle">exquisite styles & collections</h2>
+          <div class="weeks__card-container">
+            <p class="weeks__card-title">exquisite styles & collections</p>
+            <p class="weeks__card-discount">price 20% off</p>
+            <p class="weeks__card-discount-code">discount code - vatr3920</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="weeks__banner weeks__banner--two">
+        <div class="weeks__left weeks__left--two">
+          <h2 class="weeks__subtitle">new arrivals</h2>
+          <div class="weeks__card-container">
+            <p class="weeks__card-title">new arrivals</p>
+            <p class="weeks__card-discount">price 20% off</p>
+            <p class="weeks__card-discount-code">discount code - vatr3920</p>
+          </div>
+        </div>
+
+        <div class="weeks__rigth weeks__rigth--two">
+          <h2 class="weeks__subtitle">exclusive items</h2>
+          <div class="weeks__card-container">
+            <p class="weeks__card-title">exclusive items</p>
+            <p class="weeks__card-discount">price 20% off</p>
+            <p class="weeks__card-discount-code">discount code - vatr3920</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="popular section">
+      <h3 class="weeks__title">popular this week</h3>
+      <div class="popular__card-container">
+        <article class="popular__card">
+          <img src="../src/img/popular1.png" alt="" class="popular__card-img" />
+          <p class="popular__card-desc">
+            Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse
+          </p>
+          <div class="popular__card-price">
+            <p class="popular__card-price--now">$120.23</p>
+            <p class="popular__card-price--after">$120.23</p>
+            <a href="#" class="popular__card-add">+ add to basket</a>
+          </div>
+        </article>
+
+        <article class="popular__card">
+          <img src="../src/img/popular2.png" alt="" class="popular__card-img" />
+          <p class="popular__card-desc">
+            Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse
+          </p>
+          <div class="popular__card-price">
+            <p class="popular__card-price--now">$120.23</p>
+            <p class="popular__card-price--after">$120.23</p>
+            <a href="#" class="popular__card-add">+ add to basket</a>
+          </div>
+        </article>
+
+        <article class="popular__card">
+          <img src="../src/img/popular3.png" alt="" class="popular__card-img" />
+          <p class="popular__card-desc">
+            Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse
+          </p>
+          <div class="popular__card-price">
+            <p class="popular__card-price--now">$120.23</p>
+            <p class="popular__card-price--after">$120.23</p>
+            <a href="#" class="popular__card-add">+ add to basket</a>
+          </div>
+        </article>
+
+        <article class="popular__card">
+          <img src="../src/img/popular4.png" alt="" class="popular__card-img" />
+          <p class="popular__card-desc">
+            Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse
+          </p>
+          <div class="popular__card-price">
+            <p class="popular__card-price--now">$120.23</p>
+            <p class="popular__card-price--after">$120.23</p>
+            <a href="#" class="popular__card-add">+ add to basket</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="brands section">
+      <h3 class="weeks__title">brands for you</h3>
+      <div class="brands__img-container">
+        <img src="../src/img/logos/chanel.png" alt="" />
+        <img src="../src/img/logos/dolce.png" alt="" />
+        <img src="../src/img/logos/dior.png" alt="" />
+        <img src="../src/img/logos/versace.png" alt="" />
+        <img src="../src/img/logos/zara.png" alt="" />
+        <img src="../src/img/logos/gucci.png" alt="" />
+      </div>
+    </section>
+
+    <section class="collections section">
+      <div class="collections__banner">
+        <p class="collections__banner-title">
+          summer <span class="collections__banner-title--red">collections</span>
+        </p>
+        <button class="collections__banner-btn">
+          shop now
+          <svg
+            width="20"
+            height="8"
+            viewBox="0 0 25 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="collections__banner-btn-icon"
+              d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="collections__counter">
+        <span
+          class="collections__clock collections__clock--num countDown__days"
+        >
+          07
+        </span>
+        <span class="collections__clock collections__clock--db">:</span>
+        <span
+          class="collections__clock collections__clock--num countDown__hours"
+        >
+          08
+        </span>
+        <span class="collections__clock collections__clock--db">:</span>
+        <span
+          class="collections__clock collections__clock--num countDown__minutes"
+        >
+          04
+        </span>
+        <span class="collections__clock collections__clock--db">:</span>
+        <span
+          class="collections__clock collections__clock--num countDown__seconds"
+        >
+          05
+        </span>
+        <p class="collections__clock collections__clock--txt">Days</p>
+        <p class="collections__clock collections__clock"></p>
+        <p class="collections__clock collections__clock--txt">Hours</p>
+        <p class="collections__clock collections__clock"></p>
+        <p class="collections__clock collections__clock--txt">Minutes</p>
+        <p class="collections__clock collections__clock"></p>
+        <p class="collections__clock collections__clock--txt">Seconds</p>
+      </div>
+    </section>
+
+    <footer class="footer section">
+      <section class="footer__section-up">
+        <article class="footer__links">
+          <ul class="footer__links-company">
+            <li class="footer__subtitle">company info</li>
+            <li class="footer__item">
+              <a class="footer__link" href="">about laura’s closet </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">social responsibility</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">affiliate</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">fashion blogger</a>
+            </li>
+          </ul>
+
+          <ul class="footer__links-company">
+            <li class="footer__subtitle">help & support</li>
+            <li class="footer__item">
+              <a class="footer__link" href="">shipping info</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">returns</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">how to order</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">how to track</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">size chart</a>
+            </li>
+          </ul>
+
+          <ul class="footer__links-company">
+            <li class="footer__subtitle">customer care</li>
+            <li class="footer__item">
+              <a class="footer__link" href="">contact us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">payment</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">bonus point</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">notices</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="footer__sing">
+          <div class="footer__sing-container">
+            <div class="footer__socials-container">
+              <h3 class="footer__socials-title">socials</h3>
+              <div class="footer__socials-icons">
+                <a class="footer__socials-icon" href="">
+                  <img
+                    src="../src/img/icons/facebook.svg"
+                    alt="icono de facebook"
+                  />
+                </a>
+
+                <a class="footer__socials-icon" href="">
+                  <img
+                    src="../src/img/icons/twitter.svg"
+                    alt="icono de twitter"
+                  />
+                </a>
+
+                <a class="footer__socials-icon" href="">
+                  <img
+                    src="../src/img/icons/instagram.svg"
+                    alt="icono de instagram"
+                  />
+                </a>
+
+                <a class="footer__socials-icon" href="">
+                  <img
+                    src="../src/img/icons/tiktok.svg"
+                    alt="icono de tiktok"
+                  />
+                </a>
+                <a class="footer__socials-icon" href="">
+                  <img
+                    src="../src/img/icons/snapchat.svg"
+                    alt="icono de snapchat"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__platforms">
+              <h3 class="footer__socials-title">platforms</h3>
+              <div class="footer__platforms-container">
+                <a class="footer__platforms-icon" href="">
+                  <img
+                    src="../src/img/icons/android.svg"
+                    alt="icono de android"
+                  />
+                </a>
+
+                <a class="footer__platforms-icon" href="">
+                  <img src="../src/img/icons/apple.svg" alt="icono de mac" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__form-container">
+            <label class="footer__form-title" for="singup"
+              >SIGN UP FOR Laura’s Closet STYLE NEWS</label
+            >
+            <form class="footer__form">
+              <input
+                class="footer__form-input"
+                placeholder="Your email"
+                type="text"
+                name=""
+                id="singup"
+              />
+              <button class="footer__form-btn" type="button">SUBCRIBE</button>
+            </form>
+            <p class="footer__form-coockie">
+              By clicking the SUBSCRIBE button, you are agreeing to our
+              <a class="footer__form-cookie-link" href=""
+                >Privacy & Cookie Policy</a
+              >
+            </p>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="../src/js/main.js"></script>
+  </body>
+</html>
